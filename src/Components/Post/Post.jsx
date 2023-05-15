@@ -1,8 +1,11 @@
 const Post = (props) => {
     return (
         <div>
-            <span>{post.name}</span>
-            <span>{post.message}</span>
+            {props.parentPosts.map((post) =>{
+                return(
+            <div>{post.name} <br></br>{post.post}</div>
+           )
+        })}
 
         </div>
     )

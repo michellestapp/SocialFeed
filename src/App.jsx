@@ -9,7 +9,7 @@ function App() {
   const [posts, setPosts] = useState([{name:'',post:''}])
 
   function addNewPost(post){
-    let tempPosts=[...posts,post]
+    let tempPosts=[post,...posts]
     setPosts(tempPosts);
   
   }
@@ -17,6 +17,7 @@ function App() {
     <div>
       <NavBar />
       <PostForm addNewPost={addNewPost}/>
+      <Post parentPosts = {posts}/>
     </div>
   );
 }
