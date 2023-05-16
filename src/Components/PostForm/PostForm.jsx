@@ -12,7 +12,6 @@ const PostForm = (props) => {
         post: post
       };
       props.addNewPost(newPost)
-      console.log(newPost)
     }
   return (
     <form onSubmit={handleSubmit}>

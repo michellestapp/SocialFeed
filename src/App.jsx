@@ -3,10 +3,11 @@ import NavBar from "./Components/NavBar/NavBar";
 import PostForm from "./Components/PostForm/PostForm";
 import './app.css'
 import Post from "./Components/Post/Post";
+import PostList from "./Components/PostList/PostList";
 
 function App() {
 
-  const [posts, setPosts] = useState([{name:'',post:''}])
+  const [posts, setPosts] = useState([{name:'Michelle Stapp',post:'This is the most awesome forum...ever!'}])
 
   function addNewPost(post){
     let tempPosts=[post,...posts]
@@ -17,7 +18,7 @@ function App() {
     <div>
       <NavBar />
       <PostForm addNewPost={addNewPost}/>
-      <Post parentPosts = {posts}/>
+      <PostList parentPosts = {posts}/>
     </div>
   );
 }

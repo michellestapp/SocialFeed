@@ -1,0 +1,22 @@
+.post-format{
+    width: 720px;
+    height: auto;
+    background-color: white;
+    padding: 50px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.border-line-long{
+    height: 5px;
+    width: 750px;
+    color:black;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right:25px
+}
+.thumbs{
+    padding-right: 25px;
+}
