@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import './Post.css'
 
-//const [name,setName]= useState('');
-
-function changeImage() {
-    if (document.getElementById("imgClickAndChange").src == "/assets/thumbs-up-bw"){
-        document.getElementById("imgClickAndChange").src = "/assets/thumbs-up green";
-    } else {
-        document.getElementById("imgClickAndChange").src = "/assets/thumbs-up-bw";
-    }}
 
 const Post = (props) => {
 
