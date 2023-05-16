@@ -18,12 +18,12 @@ const PostForm = (props) => {
       <div className="input-block-background">
         <div className="form-input">
           <div className="name-post">
-            <span>Name</span>
-            <input type='text' value={name} onChange={(event => setName(event.target.value))}/>
+            <span className="name-format">Name</span>
+            <input className="input-area" type='text' value={name} onChange={(event => setName(event.target.value))}/>
           </div>
           <div className="name-post">
-            <span>Post</span>
-            <textarea rows="2" value={post} onChange={(event => setPost(event.target.value))}></textarea>
+            <span className="postformat">Post</span>
+            <textarea className="textarea"  rows="2" value={post} onChange={(event => setPost(event.target.value))}></textarea>
           </div>
         </div>
         <div>

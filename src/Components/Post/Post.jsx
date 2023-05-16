@@ -32,7 +32,7 @@ const Post = (props) => {
 
     return (
     
-    <div >
+    <div>
         
         <div className="post-format">
             <div>
@@ -46,7 +46,6 @@ const Post = (props) => {
             </div>
         </div>
         <hr className="border-line-long" />
-       
         
       
     </div>
